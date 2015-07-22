@@ -1,3 +1,9 @@
 body{
 	background: whitesmoke;
 }
+.jumbo{
+	height: calc(100vh - 50px);
+	background-image: url("../img/home.jpg");
+	margin: -20px -15px 0;
+	padding: 0 15px;
+}

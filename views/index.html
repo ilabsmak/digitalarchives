@@ -1,5 +1,39 @@
 {% extends "../views/layout.html" %}
 
 {% block content %}
-	<h1>Home</h1>
+<div class="container-fluid wrapper">
+	<div class="jumbo">
+		<div class="row">
+			<div class="col-md-offset-1 col-md-10">
+				<div class="row">
+					<div class="col-md-8">
+						<form>
+							<div class="row"><input type="text" class="form-control" placeholder="Search..."></div>
+						</form>
+						<div class="nav">
+							<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Browse</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="login-form login_form">
+							<form class="form-signin" role="form">
+								<h2 class="form-signin-heading">Please sign in</h2>
+								<input type="email" class="form-control" placeholder="Email address" required autofocus>
+								<input type="password" class="form-control" placeholder="Password" required>
+								<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+							</form>
+						</div> <!-- /container -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 {% end %}

@@ -6,7 +6,9 @@ import routes
 if __name__ == "__main__":
 	static_path = os.path.join(os.path.dirname(__file__), 'static')
 	settings = {
-		'static_path':static_path
+		'static_path':static_path,
+		"debug": True
+
 	}
 	application = tornado.web.Application([
 		(r"/", routes.index.Index),
