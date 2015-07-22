@@ -3,12 +3,13 @@ import tornado.web
 class Login(tornado.web.RequestHandler):
 	def get(self):
 		self.render("../views/login.html")
+		
 	def post(self):
 		email = self.get_argument("email")
 		password = self.get_argument("password")
 
 		if not password or not email:
-			self.redirect('/login')
+			self.render("../views/login.html")
 		else:
 			self.redirect('/')
 

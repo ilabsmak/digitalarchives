@@ -15,5 +15,5 @@ if __name__ == "__main__":
 		(r"/login", routes.users.Login),
 		(r"/register", routes.users.Register),
 	],**settings)
-	application.listen(8889)
+	application.listen(8888)
 	tornado.ioloop.IOLoop.current().start()
