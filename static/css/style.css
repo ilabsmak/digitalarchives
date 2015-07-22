@@ -1,9 +1,24 @@
 body{
 	background: whitesmoke;
 }
+.wrapper {
+    margin-top: 70px;
+}
+nav.navbar {
+    background-color: rgb(35, 167, 76);
+    border-color: rgb(35, 167, 76);
+}
 .jumbo{
 	height: calc(100vh - 50px);
 	background-image: url("../img/home.jpg");
 	margin: -20px -15px 0;
 	padding: 0 15px;
+	display: table;
+	width: calc(100% + 30px);
+}
+
+.login-form {
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 4px;
 }
