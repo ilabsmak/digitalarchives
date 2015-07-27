@@ -1,7 +1,7 @@
 import os
 import tornado.ioloop
 import tornado.web
-import routes
+from app import routes
 
 if __name__ == "__main__":
 	static_path = os.path.join(os.path.dirname(__file__), 'static')
