@@ -2,11 +2,16 @@ body{
 	background: whitesmoke;
 }
 .wrapper {
-    margin-top: 70px;
+    margin-top: 51px;
 }
 nav.navbar {
     background-color: rgb(35, 167, 76);
     border-color: rgb(35, 167, 76);
+    margin-bottom: 0px;
+    color: #FFF !important;
+}
+nav.navbar a{
+	color: #FFF !important;
 }
 .jumbo{
 	height: calc(100vh - 50px);
@@ -160,4 +165,9 @@ nav.navbar {
 .forgot-password:active,
 .forgot-password:focus{
     color: rgb(12, 97, 33);
+}
+
+.navigation{
+    background-color: #82C1A8;
+    height: calc(100vh - 51px);
 }

@@ -13,7 +13,10 @@ if __name__ == "__main__":
 	application = tornado.web.Application([
 		(r"/", routes.index.Index),
 		(r"/login", routes.users.Login),
+		(r"/logout", routes.users.Logout),
 		(r"/register", routes.users.Register),
+		(r"/publish", routes.books.Publish),
+		(r"/upload/", routes.books.Upload),
 	],**settings)
 	application.listen(8888)
 	tornado.ioloop.IOLoop.current().start()
