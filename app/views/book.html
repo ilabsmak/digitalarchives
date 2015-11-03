@@ -1,0 +1,10 @@
+{% extends "../views/layout.html" %}
+
+{% block content %}
+    <div class="book row">
+        <!--<iframe class="document" src="http://{{ request.host }}/viewer/#..{{ static_url("files/") }}{{ escape(book[7]) }}" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>-->
+        <iframe class="document" src="http://{{ request.host }}/viewer/web/viewer.html?file={{ static_url("files/") }}{{ escape(book[7]) }}" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>
+        <!--<iframe class="document" src="{{ static_url("files/") }}{{ escape(book[7]) }}" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>-->
+    </div>
+    
+{% end %}

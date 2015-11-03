@@ -20,6 +20,7 @@ class Login(tornado.web.RequestHandler):
 			if bcrypt.hashpw(password, user[0][8]) == user[0][8]:
 				self.set_secure_cookie("log_status", "Active")
 				self.set_secure_cookie("username", user[0][1])
+				self.set_secure_cookie("role", user[0][9])
 				self.redirect('/')
 			else:
 				self.render("../views/login.html")
